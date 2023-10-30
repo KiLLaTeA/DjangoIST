@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{Title | upper}}</h1>
+    <br>
+    <ul>
+        {% for st in students %}
+        <li>
+            <h2>{{st.FIO}}</h2>
+            <p>{{st.interesting}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
